@@ -16,7 +16,8 @@ body{
 }
 
 .logo{
-	max-width: 610px;
+	border-radius: 18%;
+	max-width: 600px;
 	margin-bottom: 24px;
 }
 
