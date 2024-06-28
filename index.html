@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gerar Passwords</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<img class="logo" src="./assets/logo.png" alt="Gerar passwords logo">
+
+	<main class="container-input">
+		<span>Tamanho <span id="valor"></span> Caracteres</span>
+		<input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
+
+		<button id="button" class="button-cta" onclick="generatePassword()">Gerar Password</button>
+	</main>
+
+	<div id="container-password" onclick="copyPassword()" class="container-password hide">
+		<span class="title">Password gerade é:</span>
+		<span id="password" class="password"></span>
+		<span class="tooltip">Clique na password para copiar. 👆</span>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
